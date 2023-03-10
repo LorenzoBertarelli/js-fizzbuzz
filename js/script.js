@@ -15,7 +15,7 @@
 const gridElem = document.querySelector(".grid");
 for (let i = 1; i <= 100; i++) {
     let BF;
-    let Number
+    let Number;
     let classColor;
     if (i % 15 === 0) {
         Number = "BuzzFizz";
@@ -31,7 +31,7 @@ for (let i = 1; i <= 100; i++) {
         classColor = "green";
      } else if (i % 1 === 0) {
         Number = `${i}`;
-        BF = "";
+        BF = "number";
     }
     console.log(i, BF);
 
