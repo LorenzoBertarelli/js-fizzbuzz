@@ -30,10 +30,10 @@ for (let i = 1; i <= 100; i++) {
         BF = "Fizz";
         classColor = "green";
      } else if (i % 1 === 0) {
-        Number = `${i}`;
+        Number = i;
         BF = "number";
     }
-    console.log(i, BF);
+    console.log(i, Number);
 
     gridElem.innerHTML += `<div class="box ${classColor}"> ${Number}</div>`;
 }
