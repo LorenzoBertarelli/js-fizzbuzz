@@ -18,18 +18,22 @@ for (let i = 1; i <= 100; i++) {
     let Number
     let classColor;
     if (i % 15 === 0) {
+        Number = "BuzzFizz";
         BF = "BuzzFizz";
         classColor = "red";
     } else if (i % 5 === 0) {
+        Number = "Buzz";
         BF = "Buzz";
         classColor = "yellow";
     } else if (i % 3 === 0) {
+        Number = "Fizz";
         BF = "Fizz";
         classColor = "green";
-    } else if (i % 1 === 0) {
-        Number = "Number";
+     } else if (i % 1 === 0) {
+        Number = `${i}`;
+        BF = "";
     }
     console.log(i, BF);
 
-    gridElem.innerHTML += `<div class="box ${classColor}"> ${i} ${BF}</div>`;
+    gridElem.innerHTML += `<div class="box ${classColor}"> ${Number}</div>`;
 }
