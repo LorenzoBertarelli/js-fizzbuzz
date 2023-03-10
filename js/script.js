@@ -14,19 +14,22 @@
 // APPLICARE DOM SU HTML E AGGIUNGERE COLORI
 const gridElem = document.querySelector(".grid");
 for (let i = 1; i <= 100; i++) {
-    let BZ;
+    let BF;
+    let Number
     let classColor;
     if (i % 15 === 0) {
-        BZ = "BuzzFizz";
+        BF = "BuzzFizz";
         classColor = "red";
     } else if (i % 5 === 0) {
-        BZ = "Buzz";
+        BF = "Buzz";
         classColor = "yellow";
     } else if (i % 3 === 0) {
-        BZ = "Fizz";
+        BF = "Fizz";
         classColor = "green";
+    } else if (i % 1 === 0) {
+        Number = "Number";
     }
-    console.log(i, oddEven);
+    console.log(i, BF);
 
-    gridElem.innerHTML = `<div class="box ${classColor}"> ${i}</div>`;
+    gridElem.innerHTML += `<div class="box ${classColor}"> ${i} ${BF}</div>`;
 }
